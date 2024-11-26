@@ -5,11 +5,11 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: nginx:latest
+    image: nginx
     ports:
     - containerPort: 80
   - name: alma
-    image: alma:latest
+    image: alma
     command: ["sleep", "3600"]
     ports:
     - containerPort: 8080
