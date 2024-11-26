@@ -4,12 +4,13 @@ metadata:
   name: multi-container
 spec:
   containers:
-  - name: nginx
-    image: nginx
-    ports:
-    - containerPort: 80
-  - name: alma
-    image: alma
-    command: ["sleep","3600"]
-    ports:
-    - containerPort: 8080
+    - name: nginx
+      image: nginx:latest
+      ports:
+        - containerPort: 80
+
+    - name: almalinux
+      image: almalinux/almalinux:latest  # Use the successfully pulled image here
+      command: ["sh", "-c", "echo 'Hello from Alma Linux!' > /var/www/html/index.html && sleep 3600"]
+      ports:
+        - containerPort: 8080
