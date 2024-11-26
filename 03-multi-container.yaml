@@ -10,6 +10,6 @@ spec:
     - containerPort: 80
   - name: alma
     image: alma:latest
-    command: ["sh", "-c", "echo 'Hello from Alma!' > /var/www/html/index.html"]
+    command: ["sleep", "3600"]
     ports:
     - containerPort: 8080
