@@ -11,6 +11,6 @@ spec:
 
     - name: almalinux
       image: almalinux/almalinux:latest  # Use the successfully pulled image here
-      command: ["sh", "-c", "echo 'Hello from Alma Linux!' > /var/www/html/index.html && sleep 3600"]
+      command: ["sleep","2000"]
       ports:
         - containerPort: 8080
