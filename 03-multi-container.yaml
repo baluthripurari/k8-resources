@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+  - name: alma
+    image: alma:latest
+    command: ["sh", "-c", "echo 'Hello from Alma!' > /var/www/html/index.html"]
+    ports:
+    - containerPort: 8080
