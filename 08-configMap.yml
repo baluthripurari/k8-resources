@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
- name: configMap-pod
+ name: configmap-pod
 data:
  githubURL: "https://github.com/baluthripurari"
  environment: "EKS_production_cluster"
