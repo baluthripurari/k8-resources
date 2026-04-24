@@ -1,0 +1,13 @@
+app: apiVersion
+kind: Pod
+metadata:
+ name: Label-demo
+ labels:
+  enviromnets: Production
+  app: nginx
+spec:
+ container:
+ - name: nginx
+   image: nginx:latest
+   ports:
+    containerPort: 80
