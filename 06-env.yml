@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: label-demo
+  name: environment-vars
   labels:
     environment: production
     app: nginx
