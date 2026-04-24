@@ -12,7 +12,7 @@ spec:
     ports:
     - containerPort: 80
     env:
-    - name: EKS-production-cluster 
+    - name: EKS_production_cluster 
       value: "EKS-production-cluster created by Balu Thripurari"
-    - name: Telsa-production
+    - name: Telsa_production
       value: "Hi There From CEO Balu"
