@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
   - name: app
-    image: almalinux:latest
+    image: nginx:latest
     resources:
       requests:
         memory: "64Mi"
