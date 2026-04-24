@@ -1,4 +1,4 @@
-app: apiVersion
+apiVersion: app/v1
 kind: Pod
 metadata:
  name: Label-demo
