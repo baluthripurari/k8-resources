@@ -6,3 +6,5 @@ Namespace --> Isolated project where you can create resources related to your ap
 - kubectl delete namespace <namespace-name> ---> Delete a namespace
 Pods --> Isolated container that runs an application
 pods conatins mutiple containers . containers inside pod share same network and storage resources
+
+kubectl exec -it multi-container -c almalinux -- /bin/bash
